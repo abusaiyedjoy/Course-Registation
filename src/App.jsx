@@ -1,11 +1,23 @@
-
+import Blogs from './Components/Blogs/blogs'
+import Cart from './Components/Cart/cart'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-2xl font-bold text-primary'>React</h1>
+      <div className='text-center mt-5'>
+        <h1 className='text-4xl'>Course Registation</h1>
+        <div className='grid grid-cols-12'> 
+        <div className='col-span-9'>
+        <Blogs></Blogs>
+        </div>
+        <div className='col-span-3'>
+        <Cart></Cart>
+        </div>
+        </div>
+      </div>
+
     </>
   )
 }
